@@ -12,9 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c13fed20-59a7-4da5-9024-14e9c5aa55e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ksztalt.cpp" afterPath="$PROJECT_DIR$/Ksztalt.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ksztalt.h" afterPath="$PROJECT_DIR$/Ksztalt.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mapa.cpp" afterPath="$PROJECT_DIR$/Mapa.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mapa.h" afterPath="$PROJECT_DIR$/Mapa.h" />
     </list>
     <ignored path="Wiktoria_Tomczyk_pd3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -72,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mapa.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Mapa.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mapa.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+            <state relative-caret-position="426">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,8 +84,8 @@
       <file leaf-file-name="Mapa.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mapa.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="408">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -95,8 +94,8 @@
       <file leaf-file-name="Ksztalt.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ksztalt.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="391">
+              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -158,8 +157,6 @@
         <option value="$PROJECT_DIR$/.idea/PunktZWysokoscia.h" />
         <option value="$PROJECT_DIR$/PunktZWysokoscia.h" />
         <option value="$PROJECT_DIR$/PunktZWysokoscia.cpp" />
-        <option value="$PROJECT_DIR$/Mapa.h" />
-        <option value="$PROJECT_DIR$/Mapa.cpp" />
         <option value="$PROJECT_DIR$/PunktNaZiemi.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Punkt.cpp" />
@@ -167,6 +164,8 @@
         <option value="$PROJECT_DIR$/Ksztalt.h" />
         <option value="$PROJECT_DIR$/Ksztalt.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Mapa.h" />
+        <option value="$PROJECT_DIR$/Mapa.cpp" />
       </list>
     </option>
   </component>
@@ -556,27 +555,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mapa.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mapa.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ksztalt.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="361">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#396#803#0" expanded="false" />
+            <element signature="e#805#1240#0" expanded="false" />
+            <element signature="e#1242#1836#0" expanded="false" />
+            <element signature="e#1838#2256#0" expanded="false" />
+            <element signature="e#2258#2661#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -590,18 +580,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Ksztalt.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <element signature="e#396#803#0" expanded="false" />
-            <element signature="e#805#1240#0" expanded="false" />
-            <element signature="e#1242#1836#0" expanded="false" />
-            <element signature="e#1838#2256#0" expanded="false" />
-            <element signature="e#2258#2661#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapa.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mapa.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

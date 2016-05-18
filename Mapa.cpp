@@ -25,3 +25,31 @@ void Mapa::wyswietl() {
         wektor[i].wyswietl();
     }
 }
+
+Mapa::Mapa(const Mapa &mapa) {
+    for (unsigned long i = 0; i < mapa.rozmiar(); ++i) {
+        this->wektor.push_back(mapa.getKsztalt(i));
+    }
+}
+
+Mapa &Mapa::operator=(const Mapa &mapa) {
+    return *(new Mapa(mapa));
+}
+
+Mapa::~Mapa() {
+    wektor.clear();
+}
+
+unsigned long Mapa::rozmiar() const {
+    return wektor.size();
+}
+
+Ksztalt Mapa::getKsztalt(int i) const{
+    return wektor[i];
+}
+
+
+
+
+
+
