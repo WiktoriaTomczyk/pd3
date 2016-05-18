@@ -1,6 +1,7 @@
 #include "Kat.h"
 #include "PunktNaZiemi.h"
 #include "Ksztalt.h"
+#include "PunktZWysokoscia.h"
 
 using namespace std;
 
@@ -65,7 +66,20 @@ int main() {
     ksz1.dodaj(pnz3);
     ksz1.dodaj(pnz1);
 
-    cout << "czy zamkniety?: " << ksz1.czyZamkniety();
+    cout << "czy zamkniety?: " << ksz1.czyZamkniety() << endl;
+
+    //==================== TEST KLASY PUNKT Z WYSOKOSCIA =======================
+
+    PunktZWysokoscia pzw1 = PunktZWysokoscia(kat1, kat2, 212);
+    PunktZWysokoscia pzw2 = PunktZWysokoscia(kat2, kat1);
+
+    cout << pzw1.toString() << endl;
+    cout << pzw2.toString() << endl;
+
+    cout << "Czy rowne?: " << (pzw1 == pzw2) << endl;
+    cout << "Czy nierowne?: " << (pzw1 != pzw2) << endl;
+
+    //====================
 
     return 0;
 }
