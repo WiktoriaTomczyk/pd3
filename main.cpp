@@ -1,4 +1,5 @@
 #include "Kat.h"
+#include "PunktNaZiemi.h"
 
 using namespace std;
 
@@ -30,6 +31,20 @@ int main() {
     cout << (kat1 < kat2) << endl;
     cout << (kat1 == kat2) << endl;
     cout << (kat1 != kat2) << endl;
+
+    // =================== TEST KLASY PUNKT NA ZIEMI ===========================
+
+    Kat * wsk1 = &kat1;
+    Kat * wsk2 = &kat2;
+
+    PunktNaZiemi pnz1 = PunktNaZiemi(wsk1, wsk2);
+    PunktNaZiemi pnz2 = PunktNaZiemi(wsk2, wsk1);
+
+    cout << wsk1->toString() << endl;
+    cout << wsk2->toString() << endl;
+
+    cout << (wsk1==wsk2) << endl;
+    cout << (wsk1!=wsk2) << endl;
 
     return 0;
 }
