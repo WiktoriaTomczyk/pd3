@@ -2,11 +2,14 @@
 #include "PunktNaZiemi.h"
 #include "Ksztalt.h"
 #include "PunktZWysokoscia.h"
+#include "Mapa.h"
+
+void testMapa() ;
 
 using namespace std;
 
 int main() {
-
+/*
     // ======================== TEST KLASY KAT ================================
     short int znak = 1;
     unsigned short int stopnie = 52;
@@ -79,7 +82,45 @@ int main() {
     cout << "Czy rowne?: " << (pzw1 == pzw2) << endl;
     cout << "Czy nierowne?: " << (pzw1 != pzw2) << endl;
 
-    //====================
+    //========================== TEST KLASY MAPA ===============================
 
+    Mapa map1;
+
+    //map1.dodaj(ksz1);
+
+    //pomocniczo:
+    Ksztalt ksz2;
+    ksz2.dodaj(pnz2);
+    ksz2.dodaj(pnz1);
+
+    map1.dodaj(ksz2);
+    //map1.dodaj(ksz1);
+
+   // map1.usun();
+
+    map1.wyswietl();
+*/
+    testMapa();
     return 0;
+}
+
+void testMapa() {
+
+    PunktNaZiemi pierwszy(new Kat(1, 52, 12, 8), new Kat(1, 50, 10, 12));
+    PunktNaZiemi drugi(new Kat(1, 53, 10, 14), new Kat(1, 50, 12, 10));
+
+    Ksztalt ksztalt;
+    ksztalt.dodaj(pierwszy);
+    ksztalt.dodaj(drugi);
+
+    Ksztalt nowy;
+    nowy.dodaj(drugi);
+    nowy.dodaj(pierwszy);
+
+    Mapa mapa;
+    mapa.dodaj(ksztalt);
+    mapa.dodaj(nowy);
+
+    mapa.wyswietl();
+
 }

@@ -33,8 +33,8 @@ void PunktNaZiemi::setSzerooksc(Kat szerokosc){
 string PunktNaZiemi::toString(){
     stringstream sstm;
 
-    sstm << (szerokosc->getZnak() < 0 ? "S" : "N") << szerokosc->wartoscBezwzgledna()->toString()
-    << (dlugosc->getZnak() < 0 ? " W" : " E") << dlugosc->wartoscBezwzgledna()->toString();
+    sstm << (szerokosc->getZnak() < 0 ? " S " : " N ") << szerokosc->wartoscBezwzgledna()->toString()
+    << (dlugosc->getZnak() < 0 ? " W " : " E ") << dlugosc->wartoscBezwzgledna()->toString();
     return sstm.str();
 }
 
