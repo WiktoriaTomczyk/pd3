@@ -4,28 +4,32 @@
 #include "PunktZWysokoscia.h"
 #include "Mapa.h"
 
-void testMapa() ;
+void testKat();
+void testPunktNaZiemi();
+void testKsztalt();
+void testPunktZWysokoscia();
+void testMapa();
 
 using namespace std;
 
 int main() {
-/*
-    // ======================== TEST KLASY KAT ================================
-    short int znak = 1;
-    unsigned short int stopnie = 52;
-    unsigned short int minuty = 12;
-    unsigned short int sekundy = 8;
 
-    Kat kat1 = new Kat(znak, stopnie, minuty, sekundy);
+    testKat();
+    testPunktNaZiemi();
+    testKsztalt();
+    testPunktZWysokoscia();
+    testMapa();
+    system("cls");
+
+    return 0;
+}
+
+void testKat() {
+
+    Kat kat1 = new Kat(1, 52, 12, 8);
+    Kat kat2 = new Kat(-1, 10, 2, 6);
 
     cout << kat1.toString() << endl;
-
-    znak = -1;
-    stopnie = 10;
-    minuty = 2;
-    sekundy = 6;
-
-    Kat kat2 = new Kat(znak, stopnie, minuty, sekundy);
 
     cout << kat2.toString() << endl;
 
@@ -36,8 +40,12 @@ int main() {
     cout << (kat1 < kat2) << endl;
     cout << (kat1 == kat2) << endl;
     cout << (kat1 != kat2) << endl;
+}
 
-    // =================== TEST KLASY PUNKT NA ZIEMI ===========================
+void testPunktNaZiemi() {
+
+    Kat kat1 = new Kat(1, 52, 12, 8);
+    Kat kat2 = new Kat(-1, 10, 2, 6);
 
     Kat * wsk1 = &kat1;
     Kat * wsk2 = &kat2;
@@ -50,8 +58,18 @@ int main() {
 
     cout << "Czy rowne?: "<<(wsk1==wsk2) << endl;
     cout << "Czy nierowne?: "<<(wsk1!=wsk2) << endl;
+}
 
-    // ======================== TEST KLASY KSZTALT ==============================
+void testKsztalt() {
+
+    Kat kat1 = new Kat(1, 52, 12, 8);
+    Kat kat2 = new Kat(-1, 10, 2, 6);
+
+    Kat * wsk1 = &kat1;
+    Kat * wsk2 = &kat2;
+
+    PunktNaZiemi pnz1 = PunktNaZiemi(wsk1, wsk2);
+    PunktNaZiemi pnz2 = PunktNaZiemi(wsk2, wsk1);
 
     Ksztalt ksz1;
 
@@ -71,7 +89,12 @@ int main() {
 
     cout << "czy zamkniety?: " << ksz1.czyZamkniety() << endl;
 
-    //==================== TEST KLASY PUNKT Z WYSOKOSCIA =======================
+}
+
+void testPunktZWysokoscia() {
+
+    Kat kat1 = new Kat(1, 52, 12, 8);
+    Kat kat2 = new Kat(-1, 10, 2, 6);
 
     PunktZWysokoscia pzw1 = PunktZWysokoscia(kat1, kat2, 212);
     PunktZWysokoscia pzw2 = PunktZWysokoscia(kat2, kat1);
@@ -82,32 +105,12 @@ int main() {
     cout << "Czy rowne?: " << (pzw1 == pzw2) << endl;
     cout << "Czy nierowne?: " << (pzw1 != pzw2) << endl;
 
-    //========================== TEST KLASY MAPA ===============================
-
-    Mapa map1;
-
-    //map1.dodaj(ksz1);
-
-    //pomocniczo:
-    Ksztalt ksz2;
-    ksz2.dodaj(pnz2);
-    ksz2.dodaj(pnz1);
-
-    map1.dodaj(ksz2);
-    //map1.dodaj(ksz1);
-
-   // map1.usun();
-
-    map1.wyswietl();
-*/
-    testMapa();
-    return 0;
 }
 
 void testMapa() {
 
-    PunktNaZiemi pierwszy(new Kat(1, 52, 12, 8), new Kat(1, 50, 10, 12));
-    PunktNaZiemi drugi(new Kat(1, 53, 10, 14), new Kat(1, 50, 12, 10));
+    PunktNaZiemi pierwszy(new Kat(1, 1, 1, 1), new Kat(1, 2, 2, 2));
+    PunktNaZiemi drugi(new Kat(1, 3, 3, 3), new Kat(1, 4, 4, 4));
 
     Ksztalt ksztalt;
     ksztalt.dodaj(pierwszy);
@@ -116,6 +119,7 @@ void testMapa() {
     Ksztalt nowy;
     nowy.dodaj(drugi);
     nowy.dodaj(pierwszy);
+    nowy.usun();
 
     Mapa mapa;
     mapa.dodaj(ksztalt);

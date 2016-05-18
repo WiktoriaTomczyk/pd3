@@ -4,7 +4,7 @@
 
 #include "PunktNaZiemi.h"
 
-PunktNaZiemi::PunktNaZiemi(Kat * dlugosc, Kat * szerokosc){
+PunktNaZiemi::PunktNaZiemi(Kat * szerokosc, Kat * dlugosc){
     this->dlugosc = new Kat(dlugosc);
     this->szerokosc = new Kat(szerokosc);
 }

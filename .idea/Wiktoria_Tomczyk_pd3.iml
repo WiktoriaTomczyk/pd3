@@ -10,8 +10,6 @@
       <sourceFolder url="file://$MODULE_DIR$/Ksztalt.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ksztalt.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PunktZWysokoscia.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/.idea/PunktZWysokoscia.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/.idea/PunktZWysokoscia.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mapa.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mapa.h" isTestSource="false" />
