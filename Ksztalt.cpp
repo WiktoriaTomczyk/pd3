@@ -8,7 +8,7 @@
 Ksztalt::Ksztalt() {
 }
 
-vector <PunktNaZiemi>* Ksztalt::getWektor() {
+vector <PunktNaZiemi>* Ksztalt::getWektor(){
     return &wektor;
 }
 
@@ -31,3 +31,30 @@ bool Ksztalt::czyZamkniety() {
     if(wektor.size() == 0) return false;
     return (wektor[0] == wektor[(wektor.size()-1)]);
 }
+
+Ksztalt::Ksztalt(const Ksztalt &ksztalt) {
+    for (int i = 0; i < ksztalt.rozmiar(); ++i) {
+        wektor.push_back(ksztalt.pobierz(i));
+    }
+}
+
+PunktNaZiemi Ksztalt::pobierz(int i) const{
+    return wektor[i];
+}
+
+Ksztalt::~Ksztalt() {
+    wektor.clear();
+}
+
+Ksztalt Ksztalt::operator=(const Ksztalt &ksztalt) {
+    return *(new Ksztalt(ksztalt));
+}
+
+unsigned long Ksztalt::rozmiar() const {
+    return wektor.size();
+}
+
+
+
+
+

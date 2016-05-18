@@ -15,11 +15,16 @@ protected:
     vector <PunktNaZiemi> wektor;
 public:
     Ksztalt();
+    Ksztalt(const Ksztalt &ksztalt);
     vector <PunktNaZiemi>* getWektor();
+    unsigned long rozmiar() const;
     void dodaj(PunktNaZiemi punktNaZiemi);
     void usun();
     void wyswietl();
     bool czyZamkniety();
+    PunktNaZiemi pobierz(int i) const;
+    ~Ksztalt();
+    Ksztalt operator=(const Ksztalt &ksztalt);
 
 };
 
