@@ -1,5 +1,6 @@
 #include "Kat.h"
 #include "PunktNaZiemi.h"
+#include "Ksztalt.h"
 
 using namespace std;
 
@@ -43,8 +44,28 @@ int main() {
     cout << wsk1->toString() << endl;
     cout << wsk2->toString() << endl;
 
-    cout << (wsk1==wsk2) << endl;
-    cout << (wsk1!=wsk2) << endl;
+    cout << "Czy rowne?: "<<(wsk1==wsk2) << endl;
+    cout << "Czy nierowne?: "<<(wsk1!=wsk2) << endl;
+
+    // ======================== TEST KLASY KSZTALT ==============================
+
+    Ksztalt ksz1;
+
+    // pomocniczo:
+    Kat * wsk3 = new Kat(1, 50, 13, 10);
+    Kat * wsk4 = new Kat(1, 52, 12, 12);
+
+    PunktNaZiemi pnz3 = PunktNaZiemi(wsk3, wsk4);
+
+    ksz1.dodaj(pnz1);
+    ksz1.dodaj(pnz2);
+
+    ksz1.usun();
+
+    ksz1.dodaj(pnz3);
+    ksz1.dodaj(pnz1);
+
+    cout << "czy zamkniety?: " << ksz1.czyZamkniety();
 
     return 0;
 }

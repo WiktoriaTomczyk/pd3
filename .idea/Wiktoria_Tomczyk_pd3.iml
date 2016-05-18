@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/PunktNaZiemi.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PunktNaZiemi.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ksztalt.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ksztalt.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Kat.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
