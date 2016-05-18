@@ -3,6 +3,7 @@
 #include "Ksztalt.h"
 #include "PunktZWysokoscia.h"
 #include "Mapa.h"
+#include "KsztaltZWysokosciami.h"
 
 void testKat();
 void testPunktNaZiemi();
@@ -10,18 +11,13 @@ void testKsztalt();
 void testPunktZWysokoscia();
 void testMapa();
 void testPunktWyswietl();
+void testKsztaltZWysokosciami();
 
 using namespace std;
 
 int main() {
 
-    testKat();
-    testPunktNaZiemi();
-    testKsztalt();
-    testPunktZWysokoscia();
-    testMapa();
-    testPunktWyswietl();
-    system("cls");
+    // MIESJSE CO RADOSNEGO TESTOWANIA :)
 
     return 0;
 }
@@ -138,5 +134,18 @@ void testPunktWyswietl(){
 
     cout << pnz1->toString() << endl;
     cout << pnz2->toString() << endl;
+
+}
+
+void testKsztaltZWysokosciami(){
+    PunktNaZiemi *p1 = new PunktNaZiemi();
+    PunktZWysokoscia *p2 = new PunktZWysokoscia();
+
+    KsztaltZWysokosciami k1;
+
+    k1.dodaj(p1);
+    k1.dodaj(p2);
+
+    k1.wyswietl();
 
 }
