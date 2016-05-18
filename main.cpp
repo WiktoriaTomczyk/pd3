@@ -9,6 +9,7 @@ void testPunktNaZiemi();
 void testKsztalt();
 void testPunktZWysokoscia();
 void testMapa();
+void testPunktWyswietl();
 
 using namespace std;
 
@@ -19,6 +20,7 @@ int main() {
     testKsztalt();
     testPunktZWysokoscia();
     testMapa();
+    testPunktWyswietl();
     system("cls");
 
     return 0;
@@ -126,5 +128,15 @@ void testMapa() {
     mapa.dodaj(nowy);
 
     mapa.wyswietl();
+
+}
+
+void testPunktWyswietl(){
+
+    PunktNaZiemi *pnz1 = new PunktZWysokoscia(new Kat(), new Kat(), 215);
+    PunktNaZiemi *pnz2 = new PunktNaZiemi(new Kat(), new Kat());
+
+    cout << pnz1->toString() << endl;
+    cout << pnz2->toString() << endl;
 
 }
